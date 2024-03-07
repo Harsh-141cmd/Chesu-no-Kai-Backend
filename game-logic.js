@@ -113,7 +113,6 @@ function newMove(move) {
      */
     
     const gameId = move.gameId 
-    
     io.to(gameId).emit('opponent move', move);
 }
 
